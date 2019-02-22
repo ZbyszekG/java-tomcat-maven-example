@@ -6,7 +6,7 @@
 
 <p> This is change is to verify the Stage vs Production</p>
 
-<p>Additinal dummy text for Jenkins CI/CD lifecycle testing</p>
+<p>Additional dummy text for Jenkins CI/CD lifecycle testing</p>
 
 </body>
 </html>
