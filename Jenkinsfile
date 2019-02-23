@@ -1,9 +1,20 @@
 pipeline {
     agent any
     stages {
-        stage ('Initialize') {
+        stage ('Build Servlet Project') {
             steps {
-               echo "Initializing the Code File"
+               //echo "Initializing the Code File"
+               /* For Windows machine */
+               bat 'mvn clean package'
+               
+               /* For Mac & Linux machine */
+               //sh 'mvn clean package'
+            }
+            post {
+            	success{
+            		echo "Now archiving"
+               		archiveArtifacts artifacts : '**/*.war'
+            	}
             }
         }
         stage ('Build '){
