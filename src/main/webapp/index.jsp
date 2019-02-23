@@ -8,7 +8,7 @@
 
 <p>Additional dummy text for Jenkins CI/CD lifecycle testing</p>
 
-<p>Another change</p>
+<p>Another change - just for check difference between production and staging env</p>
 
 </body>
 </html>
