@@ -13,7 +13,7 @@ pipeline {
         }
         stage ('Deploy' ){
             steps{
-                echo "Deplyed Artifact"
+                echo "Deployed Artifact"
             }
         }
     }
