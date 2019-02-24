@@ -20,7 +20,7 @@ pipeline {
         stage ('Deploy Build in Staging Area'){
             steps{
                 echo "Starting freestyle Jenkins project ..."
-                timeout (time: 1, unit: 'Minutes'){
+                timeout (time: 1, unit: 'MINUTES'){
             		input message: 'Waiting for successful artifact archivisation'
             	}
                 build job : 'Deploy_StagingArea_Pipeline'
@@ -28,7 +28,7 @@ pipeline {
         }
         stage ('Deploy to production' ){
             steps{
-            	timeout (time: 2, unit: 'Minutes'){
+            	timeout (time: 2, unit: 'MINUTES'){
             		input message: 'Approve PRODUCTION Deployment?'
             	}
                 build job : 'Deploy_Production_Pipeline' 
