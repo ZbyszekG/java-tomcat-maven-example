@@ -17,9 +17,10 @@ pipeline {
             	}
             }
         }
-        stage ('Build '){
+        stage ('Deploy Build inStaging Area'){
             steps{
-                echo "Hello World"
+                echo "Starting freestyle Jenkins project ..."
+                build job : 'Deploy_StagingArea_Pipeline'
             }
         }
         stage ('Deploy' ){
