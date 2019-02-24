@@ -10,5 +10,7 @@
 
 <p> now time to check if changes in project will be reflected on staging env (still working with Jenkinsfile)</p>
 
+<p> Now deployment to production environment was added</p>
+
 </body>
 </html>

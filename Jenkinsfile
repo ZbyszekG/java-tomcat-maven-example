@@ -17,15 +17,29 @@ pipeline {
             	}
             }
         }
-        stage ('Deploy Build inStaging Area'){
+        stage ('Deploy Build in Staging Area'){
             steps{
                 echo "Starting freestyle Jenkins project ..."
+                timeout (time: 1, unit: 'Minutes'){
+            		input message: 'Waiting for successful artifact archivisation'
+            	}
                 build job : 'Deploy_StagingArea_Pipeline'
             }
         }
-        stage ('Deploy' ){
+        stage ('Deploy to production' ){
             steps{
-                echo "Deployed Artifact"
+            	timeout (time: 2, unit: 'Minutes'){
+            		input message: 'Approve PRODUCTION Deployment?'
+            	}
+                build job : 'Deploy_Production_Pipeline' 
+            }
+            post{
+            	success{
+            		echo "Deployment on PRODUCTION is Successfull"
+            	}
+            	failure{
+            		echo "Deployment Failure on PRODUCTION"
+            	}
             }
         }
     }
