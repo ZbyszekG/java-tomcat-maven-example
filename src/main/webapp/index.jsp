@@ -6,6 +6,9 @@
 
 <p> Starting with Jenkins pipeline</p>
 
+<p> Issuing from Jenkinsfile free style job Deploy_StagingArea_Pipeline</p>
+
+
 
 </body>
 </html>
