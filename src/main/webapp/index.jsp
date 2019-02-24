@@ -8,7 +8,7 @@
 
 <p> Issuing from Jenkinsfile free style job Deploy_StagingArea_Pipeline</p>
 
-
+<p> now time to check if changes in project will be refelcted on staging env (still working with Jenkinsfile)</p>
 
 </body>
 </html>
