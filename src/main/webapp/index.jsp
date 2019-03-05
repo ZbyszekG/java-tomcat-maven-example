@@ -14,7 +14,7 @@
   
 <p> Have to see changes in project whne using CI/CD in distributed environment</p>
   
-  <p> first on slave02 second on slave01</p>
+  <p> first on slave02 second on slave01 and something</p>
 
 </body>
 </html>
