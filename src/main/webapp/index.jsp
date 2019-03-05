@@ -13,6 +13,8 @@
 <p> Now deployment to production environment was added - with additional changes</p>
   
 <p> Have to see changes in project whne using CI/CD in distributed environment</p>
+  
+  <p> first on slave02 second on slave01</p>
 
 </body>
 </html>
